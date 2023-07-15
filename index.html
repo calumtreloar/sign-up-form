@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-Up-Form</title>
-    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />   
   </head>
   <body>
     <div class="banner">
@@ -19,13 +19,52 @@
         </footer>
       </div>
     </div>
-    <div class="form-container">
+    <form method="post">
       <div class="text-container">
-        <p>This is some placeholder text for my company</p>
+        <h2>Transform Your Business</h2>
+        <p>
+          Elevate your business with exceptional web design services provided by Zeta, Australia’s
+          leading authority in software development and IT solutions
+        </p>
       </div>
-      <div class="form-container"></div>
-      <div class="button-container"></div>
-    </div>
+      <h3>Let's do this!</h3>
+      <div class="form-container">
+        <ul>
+          <li class="left-column">
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" id="first-name" name="first-name" required/>
+          </li>
+          <li class="left-column">
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email" required/>
+          </li class="left-column">
+          <li class="left-column">
+            <label for="password">*PASSWORD</label>
+            <input type="password" id="password" name="password" required/>
+            <span class="error"></span>
+          </li>
+        </ul>
+        <ul>
+          <li class="right-column">
+            <label for="last-name">LAST NAME</label>
+            <input type="text" id="last-name" name="last-name" required/>
+          </li>
+          <li class="right-column">
+            <label for="phone-number">PHONE NUMBER</label>
+            <input type="tel" id="phone-number" name="phone-number" />
+          </li>
+          <li class="right-column">
+            <label for="password_check">*CONFIRM PASSWORD</label>
+            <input type="password" name="password_check" id="password_check" required/>
+            <span></span>
+          </li>
+        </ul>
+      </div>
+      <div class="button-container">
+        <button type="submit" class="btn">Create Account</button>
+        <p class="login-link">Already have an account? <a class="login-link" href="index.html">Log in</a></p>
+      </div>
+    </form>
   </body>
 </html>
 

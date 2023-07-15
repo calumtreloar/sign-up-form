@@ -8,10 +8,11 @@ body {
   padding: 0;
   display: flex;
   box-sizing: border-box;
+  background-color: lightgrey;
 }
 
 .banner {
-  min-width: 450px;
+  min-width: 33vw;
   height: 100vh;
   background-image: url("/images/northern-lights.jpg");
   background-position: center;
@@ -51,4 +52,116 @@ a,
 img {
   height: 75px;
   width: 75px;
+}
+
+.login-link {
+  color: black;
+}
+
+input {
+  width: 250px;
+  height: 35px;
+  border-radius: 10px;
+  border: 1px solid rgb(191, 191, 191);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #e5e7eb;
+}
+
+.form-container {
+  display: flex;
+}
+
+.left-column,
+.right-column {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+}
+
+.button-container {
+  padding: 10px 0px;
+}
+
+button {
+  padding: 10px 30px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: #596d48;
+  color: white;
+  font-weight: bold;
+}
+
+input + span {
+  position: relative;
+}
+
+input + span::before {
+  position: absolute;
+  right: -20px;
+  top: -25px;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input:invalid + span::before {
+  content: "✖";
+  color: red;
+}
+
+input:valid + span::before {
+  content: "✓";
+  color: green;
+}
+
+input:focus {
+  outline-color: rgb(2, 2, 116);
+  -webkit-box-shadow: -1px 2px 2px 2px rgba(0, 0, 0, 0.62);
+  box-shadow: -1px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #84a26a;
+  cursor: pointer;
+}
+
+label {
+  font-family: Helvetica, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: rgb(53, 53, 53);
+}
+
+form {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+ul {
+  padding: 0px 65px 0px 0px;
+}
+
+.error {
+  color: red;
+  font-family: Helvetica, sans-serif;
+  font-size: 0.5rem;
+}
+
+h2,
+p,
+h3 {
+  font-family: Helvetica, sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.5rem;
 }
