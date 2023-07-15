@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "norse-font";
+  src: url("fonts/Kosmic.otf") format("opentype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.banner {
+  min-width: 450px;
+  height: 100vh;
+  background-image: url("/images/northern-lights.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.header {
+  margin-top: 150px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand {
+  font-family: norse-font, sans-serif;
+  font-size: 6rem;
+  color: white;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+a,
+.footer {
+  color: white;
+}
+
+.footer-container {
+  box-sizing: border-box;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+img {
+  height: 75px;
+  width: 75px;
+}
