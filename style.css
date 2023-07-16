@@ -14,7 +14,7 @@ body {
 .banner {
   min-width: 33vw;
   height: 100vh;
-  background-image: url("/images/northern-lights.jpg");
+  background-image: url("images/northern-lights.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -163,4 +163,7 @@ p {
 .error-log {
   color: red;
   font-size: 1rem;
+}
+
+.error {
 }
